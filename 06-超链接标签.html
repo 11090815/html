@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        a是超链接标签，它是一个双标签，a是anchor的缩写
+    -->
+
+    <!--
+        href属性用于指定目标url的地址
+
+        target属性用于定义超链接的打开方式
+            _blank: 新打开一个窗口打开目标链接
+            _self:在本窗口内打开目标链接
+    -->
+    <h4>外部链接</h4>
+    <a href="https://www.baidu.com" target="_self">在本窗口中打开百度</a>
+    <br>
+    <a href="https://www.baidu.com" target="_blank">在新窗口中打开百度</a>
+
+    <h4>内部链接</h4>
+    <a href="05-图像标签.html">05-图像标签.html</a>
+
+    <!--
+        可以用#代替一个空链接
+    -->
+    <h4>空链接</h4>
+    <a href="#">还没确定链接</a>
+    
+    <!--
+        如果href里面的地址是一个文件或者压缩包，会下载这个文件
+    -->
+    <h4>下载链接</h4>
+    <a href="LICENSE">下载链接</a>
+
+    <!--
+        网页元素链接
+    -->
+    <h4>网页元素链接</h4>
+    <a href="https://www.baidu.com"><img src="pictures/5.png" title="百度一下"/></a>
+
+    <!--
+        锚点链接，可以快速定位到本页面的某个位置：
+            - 在链接的href属性中，设置属性值为 #名字 的形式，如 <a href="#name">第二集</a>
+            - 找到目标位置标签，里面添加一个id属性=刚才的名字，如 <h3 id="name">第二季介绍</h3>
+    -->
+    <h4>锚点链接</h4>
+    <a href="#badman">不良人</a>
+    <br><br>
+
+    <img src="pictures/1.jpg">
+    <h3 id="badman">不良人介绍</h3>
+</body>
+
+</html>
