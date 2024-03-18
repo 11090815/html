@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wryh {
+            font-family: '微软雅黑';
+        }
+
+        .st {
+            font-family: "宋体";
+        }
+
+        .kt {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            font-size: 16px;
+            /* 标题标签不会受body标签选择器的影响，需要单独设置 */
+        }
+
+        h2 {
+            font-size: 12px;
+        }
+
+        .normal {
+            font-weight: normal;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .bolder {
+            font-weight: bolder;
+        }
+
+        .lighter {
+            font-weight: lighter;
+        }
+
+        .number {
+            font-weight: 1000;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+        .nonitalic {
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1. 字体系列
+        font-family：设置字体
+     -->
+    <p class="wryh">微软雅黑</p>
+    <p class="st">宋体</p>
+    <p class="kt">hello world</p>
+
+    <!-- 
+        2. 字体大小
+        font-size：设置字体大小
+        谷歌浏览器默认字体大小是16px
+     -->
+    <div>江哈斯大家说</div>
+    <h2>标题2</h2>
+
+    <!-- 
+        3.字体粗细
+        font-weight：设置字体粗细
+            1. normal：默认粗细，与数字400等价
+            2. bold：粗体，与数字700等价
+            3. bolder：特粗体
+            4. lighter：细体
+            5. number：通过设置数字控制字体粗细
+     -->
+    <div class="normal">normal</div>
+    <div class="bold">bold</div>
+    <div class="bolder">bolder</div>
+    <div class="lighter">lighter</div>
+    <div class="number">number</div>
+
+    <!-- 
+        4. 文字样式
+        font-style：设置文字样式
+            2. normal：不倾斜
+            1. italic：倾斜
+     -->
+    <div class="italic">倾斜</div>
+    <em class="nonitalic">倾斜的字体不倾斜</em>
+</body>
+
+</html>

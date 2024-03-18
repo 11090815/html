@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>轻舟已过万重山</h3>
+    <form method="get">
+        <table width="500" border="0">
+            <tr>
+                <td>性别</td>
+                <td>
+                    <input type="radio" name="gender" id="male" checked="checked"> <label for="male"><img src="#">
+                        男</label>
+                    <input type="radio" name="gender" id="female"> <label for="female"><img src="#"> 女</label>
+                </td>
+            </tr>
+            <tr>
+                <td>出生年月</td>
+                <td>
+                    <select name="year">
+                        <option selected="selected">--请选择年--</option>
+                        <option value="1997">1997</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                    </select>
+                    <select name="month">
+                        <option selected="selected">--请选择月--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <select name="day">
+                        <option selected="selected">--请选择日--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>所在地区</td>
+                <td>
+                    <input type="text" placeholder="大中华地区">
+                </td>
+            </tr>
+            <tr>
+                <td>婚姻状况</td>
+                <td>
+                    <input type="radio" name="hunyin" id="weihun" checked="checked" value="weihun"> <label for="weihun">未婚</label>
+                    <input type="radio" name="hunyin" id="yihun" value="yihun"> <label for="yihun">已婚</label>
+                    <input type="radio" name="hunyin" id="liyi" value="liyi"> <label for="liyi">离异</label>
+                </td>
+            </tr>
+            <tr>
+                <td>学历</td>
+                <td><input type="text" placeholder="本科"></td>
+            </tr>
+            <tr>
+                <td>喜欢的类型</td>
+                <td>
+                    <input type="checkbox" name="kind" id="wumei" checked="checked" value="wumei"> <label for="wumei">妩媚</label>
+                    <input type="checkbox" name="kind" id="keai" value="keai"> <label for="keai">可爱</label>
+                    <input type="checkbox" name="kind" id="huopo" value="huopo"> <label for="huopo">活泼</label>
+                </td>
+            </tr>
+            <tr>
+                <td>自我介绍</td>
+                <td>
+                    <textarea placeholder="我是。。。" name="intro"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="免费注册"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" checked="checked">我同意注册条款
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <a href="#">我是会员，立即登录</a>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <h4>我承诺</h4>
+                    <ul>
+                        <li>年满18岁</li>
+                        <li>信息准确</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

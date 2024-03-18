@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 选择器就是根据不同需求把不同的标签选出来就是选择器的作用 -->
+
+    <!-- 
+        div,p：选择所有<div>元素和所有<p>元素
+        div p：选择<div>元素内部的所有<p>元素
+        div>p：选择父元素为<div>元素的所有<p>元素
+        div+p：选择紧接在<div>元素之后的所有<p>元素
+        [target]：选择带有target属性的所有元素
+        [target=_blank]：选择target='_blank'的所有元素
+        [title~=flower]：选择title属性包含单词'flower'的所有元素
+        [lang|=en]：算则lang属性值以'en'开头的所有元素
+        a:link：选择所有未被访问的链接
+        a:visited：选择所有已被访问的链接
+        a:active：选择活动链接
+        #firstname：选择id='firstname'的所有元素
+        .intro：选择class='intro'的所有元素
+        *：选择所有元素
+     -->
+     <div>
+        <p>111</p>
+        <span>
+            <p>222</p>
+        </span>
+     </div>
+</body>
+</html>

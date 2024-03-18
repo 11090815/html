@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" method="post" name="form1">
+        <!-- 
+            type属性的取值：
+                1. text：输入文本，默认宽度20字段
+                2. password：输入密码
+                3. radio：单选按钮
+                4. checkbox：复选框
+
+            name属性：性别单选按钮必须有相同的名字，单选才能实现
+
+            value属性：设置默认值
+                
+            checked属性：单选和复选中设置此属性，可以实现默认选择效果
+
+            maxlength属性：规定输入字段中字符的最大长度
+
+            placeholder属性：让表单中显示不可被复制的默认值
+         -->
+        用户名：<input type="text" name="userName" value="请输入用户名" maxlength="7"><br>
+        密&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="password" name="password"><br>
+        性&nbsp;&nbsp;&nbsp;&nbsp;别：男<input type="radio" name="gender" value="male" checked="checked"> 女 <input type="radio" name="gender" value="female"> <br>
+        爱&nbsp;&nbsp;&nbsp;&nbsp;好：吃饭<input type="checkbox" name="hobby" checked="checked"> 睡觉<input type="checkbox" name="hobby"> 看书<input type="checkbox" name="hobby"><br>
+
+        <br><hr><br>
+
+        <!-- 
+            type属性的取值：
+                1. submit：定义提交按钮，会把表单数据发送给服务器
+                2. reset：清除表单内的数据，将表单元素重置到默认状态
+                3. button：定义可点击按钮，多数情况下，通过JavaScript启动脚本
+                4. file：用于上传文件
+                5. image：定义图像形式的提交按钮
+         -->
+        <input type="submit" value="注册">
+        <input type="reset" value="重新填写"><br>
+        <input type="button" value="提交"><br>
+        上传头像：<input type="file"><br><hr><br>
+        <input type="image" src="pictures/6.png">
+    </form>
+</body>
+
+</html>
