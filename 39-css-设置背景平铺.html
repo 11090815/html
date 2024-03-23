@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            widows: 800px;
+            height: 800px;
+            background-color: pink;
+            background-image: url("pictures/6.png");
+            /* 默认情况下背景是平铺的，设置让背景图片不平铺 */
+            /* background-repeat: no-repeat; */
+
+            /* 沿着x轴平铺 */
+            /* background-repeat: repeat-x; */
+
+            /* 沿着y轴平铺 */
+            background-repeat: repeat-y;
+            /* 页面元素既可以添加背景颜色也可以添加背景图片，只不过背景图片会压住背景颜色 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        平铺：必要时将图片重复显示，直到铺满屏幕
+
+        如果需要在html页面上对背景图片进行平铺，可以使用background-repeat属性。
+
+        repeat:     背景图像在纵向和横向上平铺
+        no-repeat:  背景图像不平铺
+        repeat-x: 　背景图像在横向上平铺
+        repeat-y: 　背景图像在纵向平铺 
+ 
+        说明： 
+        设置或检索对象的背景图像是否及如何铺排。必须先指定对象的背景图像。 
+    -->
+    <div></div>
+</body>
+
+</html>

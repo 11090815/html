@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color {
+            color: red;
+        }
+
+        .align {
+            text-align: center;
+        }
+
+        .decoration {
+            text-decoration: line-through;
+        }
+
+        .indent {
+            /* text-indent: -30px; */
+            text-indent: -2em;
+        }
+
+        .height {
+            line-height: 48px;
+            font-size: 16px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        文本属性可以定义文本的外观，比如文本的颜色、对齐文本、装饰文本、文本缩进、行间距等
+    -->
+
+    <!-- 
+        1. 文本颜色
+        color 属性定义文本颜色
+    -->
+    <div class="color">1234567890</div>
+
+    <!-- 
+        2. 对齐文本
+        text-align 属性定义文本水平对齐方式：left center right
+    -->
+    <div class="align">1234567890</div>
+
+    <!-- 
+        3. 装饰文本
+        text-decoration 属性可定义：
+            1. underline：下划线
+            2. line-through：删除线
+            3. overline：上划线
+            4. none：取消装饰，可以将超链接<a>标签的网址链接的下划线给去掉
+     -->
+    <div class="decoration">1234567890</div>
+
+    <!-- 
+        4. 文本缩进
+        text-indent 属性通过像素值定义缩进距离，或者通过em定义缩进距离，一个em表示一个文字的缩进距离，
+        缩进距离可以取负值
+     -->
+    <div class="indent">123456787890</div>
+
+    <!-- 
+        5. 行间距
+        line-height 定义行与行之间的间距，行间距=上间距+文本高度+下间距，例如字体大小是16px，行间距
+        设置成20px，那么上间距和下间距分别都是2px
+     -->
+    <div class="height">1234567890</div>
+</body>
+
+</html>

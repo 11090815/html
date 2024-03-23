@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            height: 100px;
+            width: 300px;
+            background-color: yellow;
+        }
+
+        span {
+            /*无效设置*/
+            height: 100px;
+            /*无效设置*/
+            width: 100px;
+            background-color: pink;
+        }
+
+        input {
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1. 什么是元素显示模式
+
+        元素显示模式就是元素以什么方式进行显示，比如<div>自己独占一行，而<span>可以一行放多个，
+        html元素一般分为块元素和行内元素两种类型。
+     -->
+
+    <!-- 
+        2. 元素显示模式分类：
+            ① 块元素：
+                <h1> ~ <h6>：文字类标签内不能放块元素
+                <p>：此标签内不能放块元素，主要用于存放文字
+                <div>：最典型的块元素
+                <ul>
+                <ol>
+                <li>
+                等等
+
+                块元素特点：独占一行；高度、宽度、外边距以及内边距都可被控制；
+                宽度默认是容器（父级宽度）的100%；是一个容器及盒子，里面可以
+                放行内或者块元素。
+
+
+            ② 行内元素（内联元素）：
+                <a>：比较特殊，里面可以放块元素
+                <span>：最典型的行内元素
+                <strong>
+                <b>
+                <em>
+                <i>
+                <del>
+                <s>
+                <ins>
+                <u>
+                等等
+
+                行内元素特点：相邻行内元素在一行上，一行可以显示多个；高、宽直接
+                设置是无效的；默认宽度就是其本身的宽度；行内元素只能容纳文本或其
+                他行内元素。
+     -->
+    <div>1234</div>
+    <span>123</span>456<span>789</span>0
+
+    <!-- 
+        ③行内块元素：
+            在行内元素中有几个特殊的标签：<img>、<input>、<td>，它们同时具有块元素和行内元素的特点。
+            本身具备的特点：和相邻行内元素在一行上，但是它们之间会有空白间隙，一行可以显示多个；默认
+            宽度就是它本身内容的宽度；高度、行高、外边距以及内边距都可以控制。
+     -->
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>

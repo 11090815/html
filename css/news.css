@@ -1,0 +1,46 @@
+body {
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.picturetitle {
+    font-size: 14px;
+    color: gainsboro;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    color: gainsboro;
+    text-align: center;
+}
+
+p {
+    line-height: 30px;
+    text-indent: 2em;
+}
+
+.picture {
+    line-height: 50px;
+    text-align: center;
+}
+
+.signal {
+    widows: 160px;
+    background-size: 30px;
+    background-image: url(../pictures/300.png);
+    background-repeat: no-repeat;
+    font-size: 16px;
+    color: darkgray;
+    line-height: 30px;
+    background-position: left center;
+    text-indent: 35px;
+}

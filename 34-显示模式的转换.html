@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            /* 把行内元素设置成块级元素 */
+            display: block;
+        }
+
+        div {
+            /* 宽度和高度的设置是无效的 */
+            width: 300px;
+            height: 100px;
+            background-color: purple;
+            /* 将div设置成行内元素 */
+            display: inline;
+        }
+
+        span {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(208, 18, 0);
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        特殊情况下，我们需要元素模式的转换，简单理解：一个模式的元素需要另外一种模式的特性，
+        比如想要增加链接<a>的触发范围。但是<a>是行内元素，没法设置高度和宽度，这个时候就需
+        要将<a>转换成块级元素。
+        在样式中设置：display:block
+    -->
+    <a href="https://www.baidu.com">百度百科</a>
+
+    <!-- 
+        块级元素转换为行内元素
+        display:inline
+    -->
+    <div>bing百科</div>
+
+    <!-- 
+        转换为行内块元素
+        display:inline-block
+    -->
+    <span>神机营</span>
+</body>
+
+</html>
